@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div className='min-h-screen bg-gradient-to-r from-[#002642] via-[#E5DADA] to-[#02040F] px-8 md:px-14 lg:px-36 pb-10 pt-10'>
+      <div className='min-h-screen bg-gradient-to-tr from-[#002642] via-[#E5DADA] to-[#02040F] px-8 md:px-14 lg:px-36 pb-10 pt-7'>
       <Header/>
       <Hero/>
       </div>

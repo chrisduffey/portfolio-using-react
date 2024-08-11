@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { HiBars4, HiXMark } from "react-icons/hi2";
+import MenuOverlay from './MenuOverlay';
 
 function Header() {
     const [toggle, setToggle]=useState(false)
@@ -28,7 +29,7 @@ function Header() {
     ]
 
   return (
-    <div className='flex items- justify-between'>
+    <div className='flex items-center justify-between'>
         <div>
         <h2 className='text-[24px] font-bold text-blue '>Chris <span className='text-red-500'>Duffey</span></h2>
         </div>
@@ -36,7 +37,7 @@ function Header() {
             {menuList.map((item)=> (
                 <div>
                     <h2 className='text-white 
-                    hover: border-[1px] border-blue-500 rounded-full text-[15px] px-3 py-1 cursor-pointer'>{item.title}</h2>
+                    hover: border-[1px] border-blue-500 rounded-full text-[15px] px-3 py-1 cursor-pointer hover:bg-gradient-to-r from-blue-500 to-blue-800'>{item.title}</h2>
                 </div>
             ))}
             <h2 className='text-white 
@@ -45,6 +46,7 @@ function Header() {
         <div className='md:hidden'>
         {!toggle? <HiBars4 onClick={()=>setToggle(!toggle)} className='text-black text-[22px]'/>
         :<HiXMark onClick={()=>setToggle(!toggle)}  className='text-black text-[22px]'/>}
+        {toggle?<MenuOverlay menuList={menuList}/>: null}
         </div>
     </div>
     
