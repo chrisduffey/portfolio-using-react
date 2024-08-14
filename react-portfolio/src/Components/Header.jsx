@@ -13,10 +13,7 @@ function Header() {
             id:1, 
             title: 'ABOUT'
         },
-        {
-            id:1, 
-            title: 'SERVICE'
-        },
+     
         {
             id:1, 
             title: 'PORTFOLIO'
@@ -41,7 +38,7 @@ function Header() {
                 </div>
             ))}
             <h2 className='text-white 
-                    hover: border-[1px] border-blue-500 rounded-full text-[15px] px-3 py-1 cursor-pointer hover:bg-gradient-to-r from-red-500 to-red-800'>Hire Me</h2>
+                    hover: border-[1px] border-blue-500 rounded-full text-[15px] px-3 py-1 cursor-pointer hover:bg-gradient-to-r from-red-500 to-red-800'>Resume</h2>
         </div>
         <div className='md:hidden'>
         {!toggle? <HiBars4 onClick={()=>setToggle(!toggle)} className='text-black text-[22px]'/>

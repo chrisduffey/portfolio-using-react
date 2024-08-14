@@ -7,7 +7,7 @@ function Footer() {
     return( 
     <footer className=" " >
         
-       <div className="flex justify-center">
+       <div className="flex-center">
             <ul className=" text-[50px]  ">
                 <a href="https://www.linkedin.com/in/chris-duffey-20555698/">
                     <li className=" px-0   ">
